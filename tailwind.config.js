@@ -9,6 +9,9 @@ export default {
        maxWidth: {
       'container': '1600px',
     },
+       fontFamily: {
+      'DM': ["DM Sans", "sans-serif"],
+    },
     colors: {
       'active': '#262626 !important',
   },
