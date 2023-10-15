@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Image = ({src , href, alt}) => {
+const Image = ({src , href, alt, className}) => {
   return (
-    <a href={href}>
-        <picture>
-            <img src={src} alt={alt} />
-        </picture>
-  </a>
+    <div>
+      <a href={href}>
+          <picture>
+              <img className={className} src={src} alt={alt} />
+            </picture>
+      </a>
+    </div>
   )
 }
 
