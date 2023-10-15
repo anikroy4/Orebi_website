@@ -53,14 +53,13 @@ const Searchbar = () => {
                     <div className='relative '>
                         <FaShoppingCart/>
                         <div className='absolute top-full right-0 translate-y-4'>
-                            <Flex className='w-[358px] items-center justify-between'>
-                                <Flex className='gap-x-20'>
+                            <Flex className='w-[358px] items-center justify-between p-5 '>
+                                <Flex className='gap-x-5 ite'>
                                     <div className='w-20 h-20 '>
                                         <Image className='w-full h-full' src="src\assets\cart_image.jpg"/>
                                     </div>
                                     <div>
-                                        <h4>Black Smart Watch</h4>
-                                        <p>$44.00</p>
+                                        <h4>Black Smart Watch</h4>                                        <p>$44.00</p>
                                     </div>
                                 </Flex>
                                 <ImCross/>
