@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ListItem = ({listInnerItem, active}) => {
+const ListItem = ({listInnerItem, active, className , listLiClassName}) => {
   return (
-    <li>
-      <a className={`text-[#767676] font-DM text-sm font-bold hover:text-active ${active}`} href="#">
+    <li className={listLiClassName}>
+      <a className={`inline-block font-DM text-sm font-bold ${className} ${active}`} href="#">
         {listInnerItem}
       </a>
     </li>
