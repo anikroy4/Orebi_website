@@ -17,8 +17,16 @@ const Navbar = () => {
 
       let navBtn = document.querySelector(".navBtn")
       navBtn.addEventListener("click", ()=>{
-        console.log(ok);
+        navToggle()
       } )
+      
+      return(()=>{
+        let navBtn = document.querySelector(".navBtn")
+        navBtn.addEventListener("click", ()=>{
+        navToggle()
+      } )
+
+      })
 
     },[])
   
@@ -30,7 +38,7 @@ const Navbar = () => {
         <Image href="" src="../src/assets/logo.png" alt="logo.png"/>
 
          
-          <List className='navList mx-auto gap-x-10 absolute md:opacity-100 left-0 top-full z-10 md:static flex-col md:flex-row bg-cyan-200 md:bg-transparent w-full md:w-auto p-5 md:p-0'>
+          <List className='navList mx-auto gap-x-10 absolute invisible md:visible md:opacity-100 left-0 top-full z-10 md:static flex-col md:flex-row bg-cyan-200 md:bg-transparent w-full md:w-auto p-5 md:p-0'>
             <ListItem className="text-[#767676] hover:text-active" active='text-active' listInnerItem='Home'/>
             <ListItem className="text-[#767676] hover:text-active" listInnerItem='Shop'/>
             <ListItem className="text-[#767676] hover:text-active" listInnerItem='About'/>

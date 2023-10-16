@@ -5,4 +5,10 @@
 
 .navList{
     opacity: 0;
+    transition: 0.8s;
+}
+
+.show{
+    opacity: 1;
+    visibility: visible;
 }

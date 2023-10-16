@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
 import { ImCross } from 'react-icons/im'
@@ -8,19 +8,47 @@ import List from './layer/List'
 import ListItem from './layer/ListItem'
 
 const Searchbar = () => {
+            useEffect(()=>{
+
+
+              function categoryToggle(){
+                let category= document.querySelector(".category")
+                category.classList.toggle("show")
+
+
+              }
+
+
+
+                let categoryBtn = document.querySelector(".categoryBtn")
+                categoryBtn.addEventListener("click", ()=>{
+                categoryToggle()
+                })
+
+
+                return (()=>{
+                    
+                let categoryBtn = document.querySelector(".categoryBtn")
+                categoryBtn.addEventListener("click", ()=>{
+                categoryToggle()
+                })
+                })
+
+            })
+
   return (
     <>
         <div className='bg-[#F5F5F3] md:py-6 py-0 md:border border-[#979797] border-0 pt-3 '>
-            <div className='max-w-container mx-auto flex justify-between items-center flex-wrap md:flex-nowrap md:pb-0 pb-4 px-3 md:px-0'>
+            <div className='max-w-container mx-auto flex justify-between items-center flex-wrap md:flex-nowrap md:pb-0  md:px-0'>
                 <div className='relative md:order-1 order-2'>
-                    <Flex className=' items-center gap-x-[10px] '>
+                    <Flex className='categoryBtn pl-3 pb-4 md:0 cursor-pointer items-center gap-x-[10px] '>
                     <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.653061 2.93878H17.6327C17.9933 2.93878 18.2857 2.64641 18.2857 2.28571V0.653061C18.2857 0.292367 17.9933 0 17.6327 0H0.653061C0.292367 0 0 0.292367 0 0.653061V2.28571C0 2.64641 0.292367 2.93878 0.653061 2.93878Z" fill="#262626"/>
                     <path d="M0.5 9.46929H13.5C13.7762 9.46929 14 9.17693 14 8.81623V7.18358C14 6.82288 13.7762 6.53052 13.5 6.53052H0.5C0.223844 6.53052 0 6.82288 0 7.18358V8.81623C0 9.17693 0.223844 9.46929 0.5 9.46929Z" fill="#262626"/>
                     </svg>
                     <p className='font-DM text-sm text-[#262626]'>Shop by Category</p>
                     </Flex>
-                    <div className='invisible opacity-0 category w-[263px] bg-slate-500 absolute top-full translate-y-6 left-0'>
+                    <div className='category invisible opacity-0 category w-[263px] bg-slate-500 absolute top-full translate-y-6 left-0'>
                     <List className="flex-col">
                         <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accessories'/>
                         <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Furniture'/>
@@ -52,8 +80,8 @@ const Searchbar = () => {
                    
                     <div className='relative '>
                         <FaShoppingCart/>
-                        <div className='absolute top-full right-0 translate-y-4'>
-                            <Flex className='w-[358px] items-center justify-between p-5 '>
+                        <div className='opacity-0  invisible absolute top-full right-0 translate-y-4 border border-[#F0F0F0]'>
+                            <Flex className='w-[358px] items-center justify-between p-5 bg-[#F5F5F3]'>
                                 <Flex className='gap-x-5 ite'>
                                     <div className='w-20 h-20 '>
                                         <Image className='w-full h-full' src="src\assets\cart_image.jpg"/>
@@ -64,12 +92,14 @@ const Searchbar = () => {
                                 </Flex>
                                 <ImCross/>
                             </Flex>
-                            <Flex className='w-[358px]  p-5 '>
+                            <Flex className='w-[358px]  p-5  bg-white'>
                                 <p>subtotal: <span>$44.00</span></p>
-                                <div>
-                                    <a href="#">view Cart</a>
-                                    <a href="#">Checkourt</a>
-                                </div>
+                                <Flex className="justify-between mt-3">
+                                    <a className="inline-block py-4 px-10 border border-black
+                                    text-black hover:bg-black hover:text-white" href="#">view Cart</a>
+                                    <a className="inline-block py-4 px-10 border border-black
+                                    text-black hover:bg-black hover:text-white" href="#">Checkout</a>
+                                </Flex>
                             </Flex>
                         </div>
                     </div>
