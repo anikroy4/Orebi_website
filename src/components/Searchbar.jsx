@@ -22,12 +22,12 @@ const Searchbar = () => {
                     </Flex>
                     <div className='invisible opacity-0 category w-[263px] bg-slate-500 absolute top-full translate-y-6 left-0'>
                     <List className="flex-col">
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
-                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accesories'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Accessories'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Furniture'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Electronics'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Clothes'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Bags'/>
+                        <ListItem listLiClassName=' bg-[#262626]  border-b border-[#2D2D2D]  ' className="py-4 px-5text-[rgba(255,255,255,0.7)] w-full hover:text-[#fff] hover:ml-3" listInnerItem='Home appliances'/>
                 
                     </List>
                     </div>
@@ -63,6 +63,13 @@ const Searchbar = () => {
                                     </div>
                                 </Flex>
                                 <ImCross/>
+                            </Flex>
+                            <Flex className='w-[358px]  p-5 '>
+                                <p>subtotal: <span>$44.00</span></p>
+                                <div>
+                                    <a href="#">view Cart</a>
+                                    <a href="#">Checkourt</a>
+                                </div>
                             </Flex>
                         </div>
                     </div>
