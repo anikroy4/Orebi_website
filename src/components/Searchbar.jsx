@@ -19,7 +19,6 @@ const Searchbar = () => {
               }
 
 
-
                 let categoryBtn = document.querySelector(".categoryBtn")
                 categoryBtn.addEventListener("click", ()=>{
                 categoryToggle()
